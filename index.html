@@ -60,5 +60,303 @@ En este sitio web conocerás la historia de Snoopy, sus amigos,
 curiosidades interesantes y una galería de imágenes.
 </p>
 
+<!-- (c) Layout created by Crash Test Dummy (https://layouts.spacehey.com/layout?id=2700) -->
+
+<style></style>
+
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=News+Cycle:wght@700&display=swap');
+
+
+
+:root {
+        --logo-blue: transparent;
+        --darker-blue: ;
+        --lighter-blue: transparent;
+	--pdg_yourBackground: url(https://i.imgur.com/BaXcA7c.jpg);
+	--pdg_pageTexture: none;
+	--pdg_nameSticker: url(https://i.imgur.com/peV3asW.gif);
+	--pdg_blurbSticker: url(https://i.imgur.com/hrNL0Nh.gif);
+	--pdg_commentsSticker: url(https://i.imgur.com/uub9EKQ.gif);
+	--pdg_interestSticker: url(https://i.imgur.com/iq7obOb.gif);
+	--pdg_urlInfoBox: url(https://i.imgur.com/BmcgMy0.gif);
+	--pdg_titleTexture: url(https://i.imgur.com/Hs9A5oC.jpg);
+	--pdg_linkTexture: url();
+	--pdg_profileInfo: url(https://i.imgur.com/RpjWmav.gif);
+}
+.profile {
+	font-family: 'News Cycle', sans-serif;
+	text-shadow:  grey;
+}
+.profile .left h1 {
+	
+    font-family: 'Acme', sans-serif;
+	line-height:1em;
+	
+}
+.profile .contact .heading h4, .profile .table-section .heading h4, .profile .blurbs .heading h4, .profile .friends .heading h4, .blog-entry .comments .heading h4, .bulletin .comments .heading h4, .home-actions .heading h1, .statistics .heading h4 {
+    font-family: 'Acme', sans-serif;
+	line-height:1em;
+	text-shadow: 0 0 7px grey;
+	
+}
+body {
+	background-image: var(--pdg_yourBackground);
+	background-size: cover;
+	background-position:center;
+	background-attachment: fixed;
+}
+
+h1, h2, h3, h4,h5,a, p, nav label, .section {color: white;}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px grey;
+}
+  .profile-pic {
+        border-radius: 500px;
+        overflow: hidden;
+    }
+main {
+	background:#00000066;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius:25px;
+	padding:25px;
+	color:#FFFFFF;
+}
+body:before {
+	display: block;
+	position: fixed;
+	pointer-events: none;
+	content: " ";
+	height: 100vh;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: var(--pdg_pageTexture);
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: .35;
+	z-index: 25;
+}
+.profile a {
+	transition: all .1s!important;
+}
+.profile a:hover, .profile a:hover p {
+	background: var(--pdg_linkTexture)!important;
+	;
+	color: #FFF!important;
+	text-shadow: 1px 1px 0 #000!important;
+	;
+}
+.profile .section p, .details-table td:last-child p{
+	background-color:#00000066;
+	padding:.5em;
+}
+.profile .left h1 {
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: #FFF;
+	text-shadow: 3px 3px 0 grey;
+}
+.profile .left h1:before {
+	background-image: var(--pdg_nameSticker);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(1.7) translateX(-1em);
+	position: absolute;
+	z-index: -1;
+}
+.profile .right .blurbs {
+	position: relative;
+}
+.profile .right .blurbs:after {
+	background-image: var(--pdg_blurbSticker);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(2) translateY(-2rem);
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+.profile .left .table-section:nth-last-child(2):before {
+	background-image: var(--pdg_interestSticker);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(1.7) translateX(-3em) translateY(2.5em);
+	position: absolute;
+	z-index: -1;
+}
+.profile .contact, .profile .url-info, .profile .table-section, .home-actions {
+	border: 0!important;
+	width: 100%;
+}
+.profile .contact .heading, .profile .table-section .heading, .home-actions .heading, .profile .blurbs .heading, .profile .friends .heading {
+	background-image: var(--pdg_titleTexture)!important;
+	background-size: cover;
+	background-position: bottom;
+	color: 
+	-webkit-text-stroke: 1px #FFF;
+}
+.profile .contact .heading h4, .profile .table-section .heading h4, .profile .blurbs .heading h4, .profile .friends .heading h4, .blog-entry .comments .heading h4, .bulletin .comments .heading h4, .home-actions .heading h1, .statistics .heading h4 {
+	text-transform: capitalize;
+	font-size: 1.6rem;
+}
+.profile .url-info {
+	border: 0;
+	color: #FFF;
+	background: var(--pdg_urlInfoBox);
+	background-position: center;
+	text-align: center;
+	padding:6em 0;
+}
+.details-table td:first-child {
+	background: none;
+	width: fit-content!important;
+	color: #FFF;
+	text-shadow: 0px 2px 0 #000;
+}
+.details-table td:last-child {
+	background: none;
+	max-height: 150px;
+	overflow-y: scroll;
+	float: right;
+}
+.details-table tr {
+	border-bottom: 1px solid #000;
+}
+.profile .blurbs .section h4 {
+	color: #B02A34;
+	font-size: 1.3rem;
+}
+.profile-info {
+	background: var(--pdg_profileInfo);
+	background-size: cover;
+	background-position: center;
+	box-shadow: -7px 8px 0 #0006;
+	color: #FFFFFF00;
+	padding:6em 0;
+}
+.profile-info h3 a {
+	color: #FFF;
+}
+.comments-table, .details-table {
+	border: 1px solid #0000;
+	border-collapse: separate;
+	border-spacing: 0 .5em;
+}
+.comments-table tr td:last-child {
+	height: 250px;
+	display: block;
+	overflow-y: scroll;
+}
+.comments-table td, .music-table td {
+	background: none;
+	color: #000;
+}
+.comments-table tr {
+	border-bottom: 1px solid #000;
+}
+.comments-table td:first-child, .music-table td:first-child {
+	background: none;
+	text-align: left;
+}
+.profile .comments-table:after {
+	background-image: var(--pdg_commentsSticker);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	height: 100px;
+	width: 100px;
+	content: " ";
+	transform: rotate(-4deg) scale(4) translateX(-2.5rem) translateY(-1rem);
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+
+.contact .inner a img {
+    font-size: 0;
+}
+.contact .inner a img:before {
+    font-size: 1em;
+    display: block;
+}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before {
+	/* add to friends */
+	content: "\2795"
+}
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before {
+	/* add to favorites */
+	content: "\2b50"
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before {
+	/* Send Message */
+	content: "\1F4ac"
+}
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before {
+	/* forward to friend */
+	content: "\23e9"
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before {
+	/* instant message */
+	content: "\1F4f1"
+}
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before {
+	/* block user */
+	content: "\274c"
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before {
+	/* add to group */
+	content: "\1F465"
+}
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before {
+	/* report user */
+	content: "\1f5e3"
+}
+
+@media only screen and (max-width: 600px) {
+	.profile .left h1:before{
+		transform: rotate(-4deg) scale(1.7) translateX(3.5em);
+	}
+	.profile .left .table-section:nth-last-child(2):before {
+		transform: rotate(-4deg) scale(1.7) translateX(14em) translateY(-1.5em);
+		z-index: 0;
+	}	 
+
+</style>
+
+<style>
+
+.online{content:url(https://i.imgur.com/NFVCpyN.gif);
+    width: 75px;
+    height: 75px;
+}
+</style>
+
+<style>
+footer {
+        border-radius: 15px;
+background: #00000066; 
+</style>
+    
 </body>
 </html>
