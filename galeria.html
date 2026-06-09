@@ -1,60 +1,169 @@
 <!DOCTYPE html>
+
 <html>
-<head><style>
+
+<head>
+<title>Galería de Snoopy</title>
+
+<style>
+
 body {
-    background-color: #fff5f5;
+    background-image: url("https://i.imgur.com/BaXcA7c.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-h1 {
-    color: #c0392b;
+.contenedor {
+    background-color: rgba(255,255,255,0.88);
+    padding: 25px;
+    border-radius: 20px;
 }
 
-h2 {
-    color: #e74c3c;
+h1 {
+    text-align: center;
+    color: black;
 }
 
 a {
-    color: #d35400;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #e74c3c;
+    color: #ff6600;
 }
 
-img {
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 280px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 100%;
     border-radius: 10px;
 }
+
+.tarjeta p {
+    color: black;
+    font-weight: bold;
+}
+
+.frase {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
 </style>
-    <title>Galería de Snoopy</title>
+
 </head>
+
 <body>
+
+<div class="contenedor">
 
 <h1>Galería de Snoopy</h1>
 
+<center>
 <a href="index.html">Inicio</a> |
 <a href="historia.html">Historia</a> |
 <a href="personajes.html">Personajes</a> |
 <a href="curiosidades.html">Curiosidades</a> |
 <a href="galeria.html">Galería</a> |
 <a href="contacto.html">Contacto</a>
+</center>
 
 <hr>
-<center>
-<img src="snoopy-waving-happily.jpeg" width="300">
-<p>Snoopy saludando.</p>
-</center>
-<center>
-<img src="81YmF4xNrYL._AC_UF894,1000_QL80_.jpg" width="300">
-<p>Snoopy con Woodstock.</p>
-</center>
-<center>
-<img src="s-l1200.png" width="300">
-<p>Snoopy descansando.</p>
-</center>
+
+<div class="frase">
+<h2>📸 Álbum de Aventuras de Snoopy 📸</h2>
+<p>
+Una colección de algunos de los momentos más divertidos y famosos de Snoopy.
+</p>
+</div>
+
+<br>
+
+<div class="galeria">
+
+<div class="tarjeta">
+<img src="saludando.jpg">
+<p>👋 Snoopy saludando</p>
+</div>
+
+<div class="tarjeta">
+<img src="woodstock.jpg">
+<p>🐦 Con su mejor amigo Woodstock</p>
+</div>
+
+<div class="tarjeta">
+<img src="descansando.jpg">
+<p>😴 Tomando una siesta</p>
+</div>
+
+<div class="tarjeta">
+<img src="aviador.jpg">
+<p>✈️ El famoso aviador</p>
+</div>
+
+<div class="tarjeta">
+<img src="astronauta.jpg">
+<p>🚀 Snoopy astronauta</p>
+</div>
+
+<div class="tarjeta">
+<img src="joecool.jpg">
+<p>😎 Joe Cool</p>
+</div>
+
+<div class="tarjeta">
+<img src="charlie.jpg">
+<p>❤️ Con Charlie Brown</p>
+</div>
+
+<div class="tarjeta">
+<img src="navidad.jpg">
+<p>🎄 Celebrando la Navidad</p>
+</div>
+
+<div class="tarjeta">
+<img src="caseta.jpg">
+<p>🏠 Sobre su casita</p>
+</div>
+
+</div>
+
+<br>
+
+<div class="frase">
+<p>
+💛 "La felicidad es un cachorro caliente." — Snoopy
+</p>
+</div>
+
+</div>
 
 </body>
 </html>
