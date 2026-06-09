@@ -1,39 +1,112 @@
 <!DOCTYPE html>
 <html>
-<head> <style>
+
+<head>
+<title>Contacto</title>
+
+<style>
+
 body {
-    background-color: #fff5f5;
+    background-image: url("https://i.imgur.com/BaXcA7c.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
+.contenedor {
+    background-color: rgba(255,255,255,0.88);
+    padding: 25px;
+    border-radius: 20px;
+}
+
 h1 {
-    color: #c0392b;
+    text-align: center;
+    color: black;
 }
 
 h2 {
-    color: #e74c3c;
+    color: black;
+    text-align: center;
 }
 
 a {
-    color: #d35400;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #e74c3c;
+    color: #ff6600;
+}
+
+.formulario {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ffd54f;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ffca28;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+    font-size: 14px;
 }
 
 img {
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
 </style>
-    <title>Contacto</title>
+
 </head>
+
 <body>
 
-<h1>Formulario de Contacto</h1>
+<div class="contenedor">
+
+<h1>Contacto</h1>
+
+<center>
 
 <a href="index.html">Inicio</a> |
 <a href="historia.html">Historia</a> |
@@ -42,44 +115,109 @@ img {
 <a href="galeria.html">Galería</a> |
 <a href="contacto.html">Contacto</a>
 
+</center>
+
 <hr>
+
+<div class="tarjeta">
+
+<h2>💌 Envíame tu opinión sobre Snoopy</h2>
+
+<p style="text-align:center;">
+¿Te gustó la página? ¿Tienes alguna curiosidad favorita?
+Déjame un comentario.
+</p>
+
+</div>
+
+<br>
+
+<div class="formulario">
 
 <form>
 
-<label>Nombre:</label>
-<br>
-<input type="text">
+<label><b>Nombre:</b></label>
+<input type="text" placeholder="Escribe tu nombre">
 
-<br><br>
+<label><b>Correo electrónico:</b></label>
+<input type="email" placeholder="ejemplo@correo.com">
 
-<label>Correo electrónico:</label>
-<br>
-<input type="email">
-
-<br><br>
-
-
-<label>Edad:</label>
-<br>
+<label><b>Edad:</b></label>
 <input type="number">
 
-<br><br>
+<label><b>Personaje favorito:</b></label>
 
-<label>Personaje favorito:</label>
-<br>
-<input type="text">
+<select>
+<option>Snoopy</option>
+<option>Charlie Brown</option>
+<option>Woodstock</option>
+<option>Lucy</option>
+<option>Linus</option>
+<option>Sally</option>
+<option>Schroeder</option>
+<option>Peppermint Patty</option>
+</select>
 
-<br><br>
+<label><b>¿Qué te pareció la página?</b></label>
 
-<label>Comentario:</label>
-<br>
-<textarea rows="5" 
+<select>
+<option>⭐⭐⭐⭐⭐ Excelente</option>
+<option>⭐⭐⭐⭐ Muy buena</option>
+<option>⭐⭐⭐ Buena</option>
+<option>⭐⭐ Regular</option>
+<option>⭐ Puede mejorar</option>
+</select>
 
-cols="30"></textarea>
+<label><b>Comentario:</b></label>
 
-<button type="submit">Enviar</button>
+<textarea rows="6"
+placeholder="Escribe aquí tu mensaje..."></textarea>
+
+<center>
+<button type="submit">🐶 Enviar comentario</button>
+</center>
 
 </form>
+
+</div>
+
+<br>
+
+<div class="tarjeta">
+
+<h2>📧 Información de contacto</h2>
+
+<p>
+Si deseas comunicarte con la creadora de esta página, puedes escribir al siguiente correo:
+</p>
+
+<p style="text-align:center; font-size:20px;">
+<b>paulinaguadalupe131220@gmail.com</b>
+</p>
+
+</div>
+
+<br>
+
+<div class="tarjeta">
+
+<h2>🌟 Gracias por visitar</h2>
+
+<p>
+Esta página fue creada como un proyecto dedicado a Snoopy y al universo de Peanuts, compartiendo su historia, personajes, curiosidades y momentos más memorables.
+</p>
+
+</div>
+
+<div class="footer">
+
+<hr>
+
+🐶 Sitio creado por Paulina Guadalupe © 2026
+
+</div>
+
+</div>
 
 </body>
 </html>
